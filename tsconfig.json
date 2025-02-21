@@ -6,7 +6,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "target": "ES2021",
+    "target": "ES2022", // Updated target version
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
@@ -18,11 +18,11 @@
       "node_modules/@types"
     ],
     "skipLibCheck": true,
-    "strictNullChecks": true,
+    "strict": true, // Enable all strict type-checking options
     "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": false,
-    "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false,
+    "noImplicitAny": true, // Enable noImplicitAny for better type safety
+    "strictBindCallApply": true, // Enable strictBindCallApply for better type safety
+    "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node"
   }
 }
